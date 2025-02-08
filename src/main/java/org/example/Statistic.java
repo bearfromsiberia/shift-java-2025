@@ -3,8 +3,9 @@ package org.example;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
-
+// Класс для вывода статистики
 public class Statistic {
+    // Вывод краткой статистики
     public static void printShortStatistic(ArrayList<Long> integers,
                                       ArrayList<Double> doubles,
                                       ArrayList<String> strings){
@@ -18,6 +19,7 @@ public class Statistic {
                 System.out.println("Strings count: " + strings.size());
             }
     }
+    // Вывод полной статистики
     public static void printFullStatistic(ArrayList<Long> integers,
                                           ArrayList<Double> doubles,
                                           ArrayList<String> strings){

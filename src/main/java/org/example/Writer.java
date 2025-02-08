@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 public class Writer {
     public static <T> void writeFile(String fileName, ArrayList<T> content, boolean append) {
+        // создание и запись в файл в зависимости от наличия типа данных
         if (!content.isEmpty()){
             try(BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, append))) {
                 for (T t : content) {

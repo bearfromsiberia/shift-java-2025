@@ -1,7 +1,7 @@
 package org.example;
 
 import java.util.ArrayList;
-
+// парсер аргументов
 public class ArgumentsHandler {
     private boolean shortStat = false;
     private boolean fullStat = false;

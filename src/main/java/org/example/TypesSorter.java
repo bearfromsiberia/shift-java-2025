@@ -4,13 +4,14 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
-
+// Класс для сортировки данных
 public class TypesSorter {
     private  ArrayList<Long> integers = new ArrayList<>();
     private ArrayList<Double> doubles = new ArrayList<>();
     private ArrayList<String> strings = new ArrayList<>();
 
     public void sortFiles(ArrayList<BufferedReader> readers) {
+        // эта часть считывает поочередно строки из файлов
         boolean read = true;
         while(read) {
             read = false;
@@ -26,6 +27,7 @@ public class TypesSorter {
                 }
             }
         }
+        // закрываем ресурсы
         for (BufferedReader reader : readers) {
             try {
                 reader.close();
@@ -37,6 +39,7 @@ public class TypesSorter {
     }
 
     private void sort(String input) {
+        // сортирует данные в зависимости от типа
         try{
             long l = Long.parseLong(input.trim());
             integers.add(l);

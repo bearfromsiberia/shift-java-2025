@@ -5,7 +5,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
-
+// Класс для считывания и инкапсуляции файлов
 public class FilesHandler {
     private ArrayList<BufferedReader> files = new ArrayList<>();
 
